@@ -1,0 +1,2154 @@
+{
+ "start": "2026-11-09T06:09:45.665Z",
+ "round": 2,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-09T06:31:46.878Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 70,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-09T06:36:19.362Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 57,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": null,
+  "dir": "/Users/xiaolipop/Desktop/MyWeb",
+  "kind": "service",
+  "start": "2026-11-09T06:09:45.665Z",
+  "by": "start.mjs",
+  "url": "http://localhost:3000/",
+  "category": "iOS development blog",
+  "primary": "Read the blog"
+ },
+ "manual": true,
+ "roundKey": "8f7960a5ceeb1b47:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "8f7960a5ceeb1b47",
+ "page": "http://localhost:3000/",
+ "found": {
+  "fails": [
+   {
+    "check": "no-visual",
+    "where": "section#writing \"Recent writing\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#writing \"Recent writing\""
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "main#top > section.section.topics-section \"Code, runtime and the work around it.\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "main#top > section.section.topics-section \"Code, runtime and the work around it.\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#assistant \"Questions about iOS and Objective-C?\"",
+    "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#assistant \"Questions about iOS and Objective-C?\""
+    ]
+   },
+   {
+    "check": "cta",
+    "where": "section#assistant \"Questions about iOS and Objective-C?\"",
+    "msg": "the last section before the footer ends with no button",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cta"
+    ],
+    "wheres": [
+     "section#assistant \"Questions about iOS and Objective-C?\""
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "div.container > div.section-heading > div > h2 \"Recent writing\"",
+    "msg": "\"Recent writing\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Code, runtime and the wo\", \"Launch performance\", \"Runtime details\", \"Working notes\")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "div.container > div.section-heading > div > h2 \"Recent writing\""
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "div.post-list > article.post-row:nth-of-type(1) > div.post-row-main > h3 \"〖iOS〗weak底层实现\"",
+    "msg": "h3 headings in 2 sizes, 22px (\"Launch performance\") to 33.6px (x1.53)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "div.post-list > article.post-row:nth-of-type(1) > div.post-row-main > h3 \"〖iOS〗weak底层实现\""
+    ]
+   },
+   {
+    "check": "off-grid",
+    "where": "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\"",
+    "msg": "left edge at 102px, 22px off the page margin at 80px (27 elements, like h2); 1 more in this section off the grid too (span.post-number at 102px)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-grid"
+    ],
+    "wheres": [
+     "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) > span.topic-number \"01\"",
+    "msg": "a caption, label or muted line in #327897 on #e7f1f5 reads 4.29:1 (needs 4.5:1); 9 like it, like \"Launch performance\", \"Mach-O · dyld\", \"02\"",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) > span.topic-number \"01\""
+    ]
+   },
+   {
+    "check": "hole",
+    "where": "section#assistant > div.container.assistant-grid > div.chat-shell \"AI 泡泡王助手 在线 你好！我是 popxiaoli 的 AI 助手。你可以问\"",
+    "msg": "an empty band 243px tall across the card (43% of its height), with content above and below it",
+    "fix": "close the empty space: move the content together, or give the space the visual it lacks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "hole"
+    ],
+    "wheres": [
+     "section#assistant > div.container.assistant-grid > div.chat-shell \"AI 泡泡王助手 在线 你好！我是 popxiaoli 的 AI 助手。你可以问\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "section.hero > div.container.hero-grid > figure.hero-visual > img \"img: 暮色中的城市天际线与河面倒影\"",
+    "msg": "image: 808x447 shown at 651x725, blown up 1.62x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "section.hero > div.container.hero-grid > figure.hero-visual > img \"img: 暮色中的城市天际线与河面倒影\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+    "msg": "the section is 594px tall (0.7 screens), 306px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#memories \"Fragments of memory记忆切片Ten photographs c\"",
+    "msg": "the scene's section is 1075px tall (1.2 screens), 175px over one screen (900px): every section after the hero is one screen or two, 2px either way; a pinned scene is (hold + 1) screens tall, so write data-big-scene-opts='{\"hold\": 1}' (two screens) and keep --h on the section (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height",
+     "screen-height"
+    ],
+    "wheres": [
+     "section#memories \"Fragments of memory记忆切片Ten photographs c\"",
+     "#memories section.section.memories-section \"Fragments of memory记忆切片Ten photo\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#writing \"EssaysRecent writingTwo essays on startu\"",
+    "msg": "the section is 735px tall (0.8 screens), 165px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: \"Ask the notebookQuestion\", \"The notebookCode, runtim\") (SR-2)",
+    "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height",
+     "screen-short",
+     "screen-height"
+    ],
+    "wheres": [
+     "section#writing \"EssaysRecent writingTwo essays on startu\"",
+     "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\"",
+    "msg": "the section starts at 1635px, 165px above the screen grid (2 x 900px): sections start on whole screens (SR-2)",
+    "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#writing > div.container > div.post-list \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#writing > div.container > div.post-list \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "main#top > section.section.topics-section > div.container.topics-grid > div.topic-list \"01Launch performanceHow an app gets from\"",
+    "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+    "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "main#top > section.section.topics-section > div.container.topics-grid > div.topic-list \"01Launch performanceHow an app gets from\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#assistant \"Ask the notebookQuestions about iOS and \"",
+    "msg": "the screen at scroll 4127px (the top of section 6) shows 233px of section 5 and the content of 2 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section",
+     "neighbour"
+    ],
+    "wheres": [
+     "section#assistant \"Ask the notebookQuestions about iOS and \"",
+     "#assistant section.section.assistant-section \"Ask the notebookQuestions about \""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\"",
+    "msg": "the screen at scroll 900px (stride 1) shows 165px of section 3 and the content of 2 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+    "msg": "the screen at scroll 3632px (the top of section 5) shows 100px of section 6 beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (and 2 more like it: scroll 3600px, scroll 1800px) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "header.site-header \"跳至内容popxiaoli首页文章关于Read the blog首页文章关于Re\"",
+    "msg": "the nav's content runs 8px from the left and 80px from the right (read from its outermost blocks: no .wrap): the page's container starts at 80px; 8 and 80px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "header.site-header \"跳至内容popxiaoli首页文章关于Read the blog首页文章关于Re\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+    "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 6 more like it: \"An iOS notebook · 2 long\", \"EssaysRecent writingTwo \", \"The notebookCode, runtim\") (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "header.site-header > div.container.nav-bar > a.skip-link \"跳至内容\"",
+    "msg": "a box runs 8-100px, outside the container lines of the nav at 80-1360px: full width is for background layers and grounds only (SR-6)",
+    "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "header.site-header > div.container.nav-bar > a.skip-link \"跳至内容\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.container.footer-main > div.footer-directory > div:nth-of-type(1) > p.footer-label \"Pages\"",
+    "msg": "1 text block starts on a left line at x 924, 844px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.container.footer-main > div.footer-directory > div:nth-of-type(1) > p.footer-label \"Pages\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\"",
+    "msg": "2 text blocks start on a left line at x 102, 22px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"02\") (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "main#top > section.section.topics-section > div.container.topics-grid > div.code-visual \"weak.m// A weak reference, kept alive by\"",
+    "msg": "a box over half the container wide runs 701-1360px, not on the container's lines at 80-1360px (and 1 more like it: \"↗\") (SR-6)",
+    "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "main#top > section.section.topics-section > div.container.topics-grid > div.code-visual \"weak.m// A weak reference, kept alive by\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "section#writing > div.container > div.post-list > article.post-row:nth-of-type(1) \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\"",
+    "msg": "a row of 3 items: its first item starts at 102px, the container's left line at 80px; its last item ends at 1338px, the container's right line at 1360px; its items are 19/126/126px tall, not one height (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "section#writing > div.container > div.post-list > article.post-row:nth-of-type(1) \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "section#writing > div.container > div.post-list > article.post-row:nth-of-type(2) \"022026年6月4日8 min read【iOS】启动优化从虚拟内存、Mach\"",
+    "msg": "a row of 3 items: its first item starts at 102px, the container's left line at 80px; its last item ends at 1338px, the container's right line at 1360px; its items are 19/101/101px tall, not one height (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "section#writing > div.container > div.post-list > article.post-row:nth-of-type(2) \"022026年6月4日8 min read【iOS】启动优化从虚拟内存、Mach\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "section.section.topics-section > div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) \"01Launch performanceHow an app gets from\"",
+    "msg": "a row of 3 items: its items are 19/66/21px tall, not one height (2px either way) (and 2 more like it: \"02Runtime detailsObjecti\", \"03Working notesSmall eng\") (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "section.section.topics-section > div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) \"01Launch performanceHow an app gets from\""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "section#assistant > div.container.assistant-grid \"Ask the notebookQuestions about iOS and \"",
+    "msg": "the two columns of the split start 36px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+    "fix": "top-align both columns of the split (align-items: start)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "section#assistant > div.container.assistant-grid \"Ask the notebookQuestions about iOS and \""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "footer#site-footer > div.container.footer-main \"The notebookRead the latest iOS notes.Tw\"",
+    "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 924, the first split's at 709; its right column starts at x 924, on none of the split lines 623 (k=5), 732 (k=6), 841 (k=7) (SR-8)",
+    "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "footer#site-footer > div.container.footer-main \"The notebookRead the latest iOS notes.Tw\""
+    ]
+   },
+   {
+    "check": "split-pair",
+    "where": "main#top > section.hero > div.container.hero-grid \"An iOS notebook · 2 long-form essaysiOS \"",
+    "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 709, on none of the split lines 623 (k=5), 732 (k=6), 841 (k=7) (SR-8)",
+    "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "split-pair"
+    ],
+    "wheres": [
+     "main#top > section.hero > div.container.hero-grid \"An iOS notebook · 2 long-form essaysiOS \""
+    ]
+   },
+   {
+    "check": "cut-text",
+    "where": "div.code-visual > pre > code > span.code-muted:nth-of-type(1) \"// A weak reference, kept alive by the r\"",
+    "msg": "cut 10px at the right by the overflow of main#top > section.section.topics-section > div.container.topics-grid > div.code-visual (and 1 more like it: \"// A weak reference, kep\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cut-text"
+    ],
+    "wheres": [
+     "div.code-visual > pre > code > span.code-muted:nth-of-type(1) \"// A weak reference, kept alive by the r\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-main > img \"img: 记忆切片 1\"",
+    "msg": "image: 390x219 shown at 350x326, blown up 1.49x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "div.container > div.memory-gallery > button.memory-frame.memory-frame-main > img \"img: 记忆切片 1\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-wide > img \"img: 记忆切片 5\"",
+    "msg": "image: 390x166 shown at 170x225, blown up 1.35x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "div.container > div.memory-gallery > button.memory-frame.memory-frame-wide > img \"img: 记忆切片 5\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.hero.is-still figure.hero-visual \"Now readingweak 底层实现10 min read\"",
+    "msg": "starts at x 708.9; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.hero.is-still figure.hero-visual \"Now readingweak 底层实现10 min read\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#writing p.section-aside \"Two essays on startup time and t\"",
+    "msg": "starts at x 976; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#writing p.section-aside \"Two essays on startup time and t\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#writing h3 \"〖iOS〗weak底层实现\"",
+    "msg": "starts at x 170; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#writing h3 \"〖iOS〗weak底层实现\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#writing p \"从 objc_initWeak、storeWeak、SideTa\"",
+    "msg": "starts at x 170; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#writing p \"从 objc_initWeak、storeWeak、SideTa\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#writing h3 \"【iOS】启动优化\"",
+    "msg": "starts at x 170; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#writing h3 \"【iOS】启动优化\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#writing p \"从虚拟内存、Mach-O、pre-main 到 main 阶段，\"",
+    "msg": "starts at x 170; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#writing p \"从虚拟内存、Mach-O、pre-main 到 main 阶段，\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section div.code-visual \"weak.m// A weak reference, kept \"",
+    "msg": "starts at x 701.1; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section div.code-visual \"weak.m// A weak reference, kept \""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section h3 \"Launch performance\"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section h3 \"Launch performance\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section p \"How an app gets from a tap on th\"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section p \"How an app gets from a tap on th\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section h3 \"Runtime details\"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section h3 \"Runtime details\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section p \"Objective-C internals explained \"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section p \"Objective-C internals explained \""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section h3 \"Working notes\"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section h3 \"Working notes\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "section.section.topics-section p \"Small engineering decisions that\"",
+    "msg": "starts at x 148; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "section.section.topics-section p \"Small engineering decisions that\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#memories p.section-aside \"Ten photographs collected away f\"",
+    "msg": "starts at x 994.4; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#memories p.section-aside \"Ten photographs collected away f\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#assistant div.chat-shell \"AI泡泡王助手 在线你好！我是 popxiaoli 的 AI 助\"",
+    "msg": "starts at x 669.3; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#assistant div.chat-shell \"AI泡泡王助手 在线你好！我是 popxiaoli 的 AI 助\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#assistant p.chat-title \"泡泡王助手\"",
+    "msg": "starts at x 746.3; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#assistant p.chat-title \"泡泡王助手\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#assistant p.chat-status \"在线\"",
+    "msg": "starts at x 746.3; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#assistant p.chat-status \"在线\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#assistant p.chat-hint \"Enter 发送 · Shift + Enter 换行\"",
+    "msg": "starts at x 670.3; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#assistant p.chat-hint \"Enter 发送 · Shift + Enter 换行\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#site-footer div.footer-directory \"Pages首页文章关于TopicsiOSObjective-CR\"",
+    "msg": "starts at x 923.6; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#site-footer div.footer-directory \"Pages首页文章关于TopicsiOSObjective-CR\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#site-footer span \"© 2026\"",
+    "msg": "starts at x 1315.1; the lines are 80 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#site-footer span \"© 2026\""
+    ]
+   },
+   {
+    "check": "neighbour",
+    "where": "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\"",
+    "msg": "framed, 21px of section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\" shows",
+    "fix": "keep the next section's heading and picture out of this screen",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "neighbour"
+    ],
+    "wheres": [
+     "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\""
+    ]
+   },
+   {
+    "check": "screen-height",
+    "where": "section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\"",
+    "msg": "923px, 1.03 screens; a section is exactly one or two (--h)",
+    "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-height"
+    ],
+    "wheres": [
+     "section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\""
+    ]
+   },
+   {
+    "check": "screen-short",
+    "where": "#assistant section.section.assistant-section \"Ask the notebookQuestions about \"",
+    "msg": "800px tall; one screen under the nav is 900px",
+    "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-short",
+     "screen-height"
+    ],
+    "wheres": [
+     "#assistant section.section.assistant-section \"Ask the notebookQuestions about \""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "nav",
+    "where": "header.site-header > div.container.nav-bar > a.brand-mark \"popxiaoli\"",
+    "msg": "the nav is lopsided: its first item starts 20px inside the content's edge (80px), while its last ends on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#memories > div.container > div.memory-gallery > button.memory-frame.memory-frame-main \"↗\"",
+    "msg": "starts \"transform\" (0.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "the main action \"Read the blog\" does not read word for word the same in the closing section",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero / section#writing",
+    "msg": "178px between these sections, -26% against the median 240px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "hole",
+    "where": "main#top > section.section.topics-section \"Code, runtime and the work around it.\"",
+    "msg": "an empty hole 649x242px inside the section (27% of the screen's height), with content above and below it",
+    "fix": "close the empty space: move the content together, or give the space the visual it lacks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-wide > img \"image\"",
+    "msg": "3 photographs in more than one look: saturation from 0.11 to 0.50; warm and cool photographs mixed (b* -15 to +23); the odd one out is image",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "h1#hero-title \"iOS development notes by popxiaoli\"",
+    "msg": "a headline of 5 words on 4 lines at 99.2px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#assistant > div.container.assistant-grid > div.assistant-copy > h2 \"Questions about iOS and Objective-C?\"",
+    "msg": "a section heading of 5 words on 5 lines at 59px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-repeat",
+    "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-main > img \"image\"",
+    "msg": "the photograph image is shown 4 times on the page: a picture the visitor has already seen",
+    "fix": "show each photograph once: a different picture of what this section names, or none",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "grounds",
+    "where": "main#top > section.hero \"An iOS notebook · 2 long-form essays iOS\"",
+    "msg": "4 flat grounds across the page (#f4f8fa section, #ffffff section x2, #e7f1f5 section x2, #dcecf4 footer): three at most (the base, a surface, an inverse)",
+    "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "skip-link",
+    "where": "header.site-header > div.container.nav-bar > a.skip-link:nth-of-type(1) \"跳至内容\"",
+    "msg": "the first Tab stop is \"跳至内容\", not a skip link: a keyboard user tabs through the whole nav on every visit",
+    "fix": "add the starter's skip link as the header's first child: <a class=\"skip-link\" href=\"#top\">Skip to content</a>",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "lang",
+    "where": "html \"zh-CN\"",
+    "msg": "<html lang=\"zh-CN\">, but the words read as en (43 common en words against 0 zh ones in 267)",
+    "fix": "set <html lang> to the language the page is written in, from the brief (\"de\" for a German page)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.site-header > div.container.nav-bar > div.nav-actions > a.btn.btn--primary \"read the blog\"",
+    "msg": "\"read the blog\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "form-fields",
+    "where": "div.container.assistant-grid > div.chat-shell:nth-of-type(2) > div.ai-chat > form.chat-form",
+    "msg": "the submit button is disabled before anything is typed: it says nothing about what is missing",
+    "fix": "give each field its type, autocomplete and inputmode, never block paste or disable the button before a submit, and add the status line (references/system.md, Forms)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "header.site-header > div.container.nav-bar > a.brand-mark \"popxiaoli\"",
+    "msg": "a 102x32px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "article.post-row:nth-of-type(1) > div.post-row-main > h3 > a \"〖iOS〗weak底层实现\"",
+    "msg": "a 237x29px tap target (and 1 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.post-list > article.post-row:nth-of-type(1) > div.post-row-end > a.text-link \"Read essay ↗\"",
+    "msg": "a 102x24px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "textarea#chat-message",
+    "msg": "a 244x36px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.container.footer-main > div.footer-directory > div:nth-of-type(1) > a:nth-of-type(1) \"首页\"",
+    "msg": "a 32x32px tap target (and 2 more like it on this screen): under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "hole",
+    "where": "section#assistant > div.container.assistant-grid > div.chat-shell \"AI 泡泡王助手 在线 你好！我是 popxiaoli 的 AI 助手。你可以问\"",
+    "msg": "an empty band 184px tall across the card (35% of its height), with content above and below it",
+    "fix": "close the empty space: move the content together, or give the space the visual it lacks",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.post-list > article.post-row:nth-of-type(2) > div.post-row-end > a.text-link \"Read essay ↗\"",
+    "msg": "a 102x24px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-eyebrows",
+    "msg": "5 eyebrow or kicker labels",
+    "fix": "one or two a page; a heading that names the thing needs no label over it (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "(the copy)",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 96,
+   "layout": 15
+  }
+ },
+ "open": [
+  {
+   "check": "no-visual",
+   "where": "section#writing \"Recent writing\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#writing \"Recent writing\""
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "main#top > section.section.topics-section \"Code, runtime and the work around it.\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "main#top > section.section.topics-section \"Code, runtime and the work around it.\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#assistant \"Questions about iOS and Objective-C?\"",
+   "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#assistant \"Questions about iOS and Objective-C?\""
+   ]
+  },
+  {
+   "check": "cta",
+   "where": "section#assistant \"Questions about iOS and Objective-C?\"",
+   "msg": "the last section before the footer ends with no button",
+   "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cta"
+   ],
+   "wheres": [
+    "section#assistant \"Questions about iOS and Objective-C?\""
+   ]
+  },
+  {
+   "check": "copy-headings",
+   "where": "div.container > div.section-heading > div > h2 \"Recent writing\"",
+   "msg": "\"Recent writing\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Code, runtime and the wo\", \"Launch performance\", \"Runtime details\", \"Working notes\")",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "div.container > div.section-heading > div > h2 \"Recent writing\""
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "div.post-list > article.post-row:nth-of-type(1) > div.post-row-main > h3 \"〖iOS〗weak底层实现\"",
+   "msg": "h3 headings in 2 sizes, 22px (\"Launch performance\") to 33.6px (x1.53)",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "div.post-list > article.post-row:nth-of-type(1) > div.post-row-main > h3 \"〖iOS〗weak底层实现\""
+   ]
+  },
+  {
+   "check": "off-grid",
+   "where": "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\"",
+   "msg": "left edge at 102px, 22px off the page margin at 80px (27 elements, like h2); 1 more in this section off the grid too (span.post-number at 102px)",
+   "fix": "move it onto the page margin, or the column edge its section uses",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-grid"
+   ],
+   "wheres": [
+    "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) > span.topic-number \"01\"",
+   "msg": "a caption, label or muted line in #327897 on #e7f1f5 reads 4.29:1 (needs 4.5:1); 9 like it, like \"Launch performance\", \"Mach-O · dyld\", \"02\"",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) > span.topic-number \"01\""
+   ]
+  },
+  {
+   "check": "hole",
+   "where": "section#assistant > div.container.assistant-grid > div.chat-shell \"AI 泡泡王助手 在线 你好！我是 popxiaoli 的 AI 助手。你可以问\"",
+   "msg": "an empty band 243px tall across the card (43% of its height), with content above and below it",
+   "fix": "close the empty space: move the content together, or give the space the visual it lacks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "hole"
+   ],
+   "wheres": [
+    "section#assistant > div.container.assistant-grid > div.chat-shell \"AI 泡泡王助手 在线 你好！我是 popxiaoli 的 AI 助手。你可以问\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "section.hero > div.container.hero-grid > figure.hero-visual > img \"img: 暮色中的城市天际线与河面倒影\"",
+   "msg": "image: 808x447 shown at 651x725, blown up 1.62x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "section.hero > div.container.hero-grid > figure.hero-visual > img \"img: 暮色中的城市天际线与河面倒影\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+   "msg": "the section is 594px tall (0.7 screens), 306px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#memories \"Fragments of memory记忆切片Ten photographs c\"",
+   "msg": "the scene's section is 1075px tall (1.2 screens), 175px over one screen (900px): every section after the hero is one screen or two, 2px either way; a pinned scene is (hold + 1) screens tall, so write data-big-scene-opts='{\"hold\": 1}' (two screens) and keep --h on the section (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height",
+    "screen-height"
+   ],
+   "wheres": [
+    "section#memories \"Fragments of memory记忆切片Ten photographs c\"",
+    "#memories section.section.memories-section \"Fragments of memory记忆切片Ten photo\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#writing \"EssaysRecent writingTwo essays on startu\"",
+   "msg": "the section is 735px tall (0.8 screens), 165px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: \"Ask the notebookQuestion\", \"The notebookCode, runtim\") (SR-2)",
+   "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height",
+    "screen-short",
+    "screen-height"
+   ],
+   "wheres": [
+    "section#writing \"EssaysRecent writingTwo essays on startu\"",
+    "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\"",
+   "msg": "the section starts at 1635px, 165px above the screen grid (2 x 900px): sections start on whole screens (SR-2)",
+   "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#writing > div.container > div.post-list \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#writing > div.container > div.post-list \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "main#top > section.section.topics-section > div.container.topics-grid > div.topic-list \"01Launch performanceHow an app gets from\"",
+   "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+   "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "main#top > section.section.topics-section > div.container.topics-grid > div.topic-list \"01Launch performanceHow an app gets from\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#assistant \"Ask the notebookQuestions about iOS and \"",
+   "msg": "the screen at scroll 4127px (the top of section 6) shows 233px of section 5 and the content of 2 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section",
+    "neighbour"
+   ],
+   "wheres": [
+    "section#assistant \"Ask the notebookQuestions about iOS and \"",
+    "#assistant section.section.assistant-section \"Ask the notebookQuestions about \""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\"",
+   "msg": "the screen at scroll 900px (stride 1) shows 165px of section 3 and the content of 2 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "main#top > section.section.topics-section \"The notebookCode, runtime and the work a\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+   "msg": "the screen at scroll 3632px (the top of section 5) shows 100px of section 6 beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (and 2 more like it: scroll 3600px, scroll 1800px) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "header.site-header \"跳至内容popxiaoli首页文章关于Read the blog首页文章关于Re\"",
+   "msg": "the nav's content runs 8px from the left and 80px from the right (read from its outermost blocks: no .wrap): the page's container starts at 80px; 8 and 80px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "header.site-header \"跳至内容popxiaoli首页文章关于Read the blog首页文章关于Re\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "footer#site-footer \"The notebookRead the latest iOS notes.Tw\"",
+   "msg": "a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 6 more like it: \"An iOS notebook · 2 long\", \"EssaysRecent writingTwo \", \"The notebookCode, runtim\") (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "footer#site-footer \"The notebookRead the latest iOS notes.Tw\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "header.site-header > div.container.nav-bar > a.skip-link \"跳至内容\"",
+   "msg": "a box runs 8-100px, outside the container lines of the nav at 80-1360px: full width is for background layers and grounds only (SR-6)",
+   "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "header.site-header > div.container.nav-bar > a.skip-link \"跳至内容\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.container.footer-main > div.footer-directory > div:nth-of-type(1) > p.footer-label \"Pages\"",
+   "msg": "1 text block starts on a left line at x 924, 844px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.container.footer-main > div.footer-directory > div:nth-of-type(1) > p.footer-label \"Pages\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\"",
+   "msg": "2 text blocks start on a left line at x 102, 22px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"02\") (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.container > div.post-list > article.post-row:nth-of-type(1) > span.post-number \"01\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "main#top > section.section.topics-section > div.container.topics-grid > div.code-visual \"weak.m// A weak reference, kept alive by\"",
+   "msg": "a box over half the container wide runs 701-1360px, not on the container's lines at 80-1360px (and 1 more like it: \"↗\") (SR-6)",
+   "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "main#top > section.section.topics-section > div.container.topics-grid > div.code-visual \"weak.m// A weak reference, kept alive by\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "section#writing > div.container > div.post-list > article.post-row:nth-of-type(1) \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\"",
+   "msg": "a row of 3 items: its first item starts at 102px, the container's left line at 80px; its last item ends at 1338px, the container's right line at 1360px; its items are 19/126/126px tall, not one height (2px either way) (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "section#writing > div.container > div.post-list > article.post-row:nth-of-type(1) \"012026年6月5日10 min read〖iOS〗weak底层实现从 obj\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "section#writing > div.container > div.post-list > article.post-row:nth-of-type(2) \"022026年6月4日8 min read【iOS】启动优化从虚拟内存、Mach\"",
+   "msg": "a row of 3 items: its first item starts at 102px, the container's left line at 80px; its last item ends at 1338px, the container's right line at 1360px; its items are 19/101/101px tall, not one height (2px either way) (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "section#writing > div.container > div.post-list > article.post-row:nth-of-type(2) \"022026年6月4日8 min read【iOS】启动优化从虚拟内存、Mach\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "section.section.topics-section > div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) \"01Launch performanceHow an app gets from\"",
+   "msg": "a row of 3 items: its items are 19/66/21px tall, not one height (2px either way) (and 2 more like it: \"02Runtime detailsObjecti\", \"03Working notesSmall eng\") (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "section.section.topics-section > div.container.topics-grid > div.topic-list > div.topic-row:nth-of-type(1) \"01Launch performanceHow an app gets from\""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "section#assistant > div.container.assistant-grid \"Ask the notebookQuestions about iOS and \"",
+   "msg": "the two columns of the split start 36px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)",
+   "fix": "top-align both columns of the split (align-items: start)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "section#assistant > div.container.assistant-grid \"Ask the notebookQuestions about iOS and \""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "footer#site-footer > div.container.footer-main \"The notebookRead the latest iOS notes.Tw\"",
+   "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 924, the first split's at 709; its right column starts at x 924, on none of the split lines 623 (k=5), 732 (k=6), 841 (k=7) (SR-8)",
+   "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "footer#site-footer > div.container.footer-main \"The notebookRead the latest iOS notes.Tw\""
+   ]
+  },
+  {
+   "check": "split-pair",
+   "where": "main#top > section.hero > div.container.hero-grid \"An iOS notebook · 2 long-form essaysiOS \"",
+   "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 709, on none of the split lines 623 (k=5), 732 (k=6), 841 (k=7) (SR-8)",
+   "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "split-pair"
+   ],
+   "wheres": [
+    "main#top > section.hero > div.container.hero-grid \"An iOS notebook · 2 long-form essaysiOS \""
+   ]
+  },
+  {
+   "check": "cut-text",
+   "where": "div.code-visual > pre > code > span.code-muted:nth-of-type(1) \"// A weak reference, kept alive by the r\"",
+   "msg": "cut 10px at the right by the overflow of main#top > section.section.topics-section > div.container.topics-grid > div.code-visual (and 1 more like it: \"// A weak reference, kep\")",
+   "fix": "give the text room: no overflow clipping a line, no line past its box",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cut-text"
+   ],
+   "wheres": [
+    "div.code-visual > pre > code > span.code-muted:nth-of-type(1) \"// A weak reference, kept alive by the r\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-main > img \"img: 记忆切片 1\"",
+   "msg": "image: 390x219 shown at 350x326, blown up 1.49x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "div.container > div.memory-gallery > button.memory-frame.memory-frame-main > img \"img: 记忆切片 1\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "div.container > div.memory-gallery > button.memory-frame.memory-frame-wide > img \"img: 记忆切片 5\"",
+   "msg": "image: 390x166 shown at 170x225, blown up 1.35x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "div.container > div.memory-gallery > button.memory-frame.memory-frame-wide > img \"img: 记忆切片 5\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.hero.is-still figure.hero-visual \"Now readingweak 底层实现10 min read\"",
+   "msg": "starts at x 708.9; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.hero.is-still figure.hero-visual \"Now readingweak 底层实现10 min read\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#writing p.section-aside \"Two essays on startup time and t\"",
+   "msg": "starts at x 976; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#writing p.section-aside \"Two essays on startup time and t\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#writing h3 \"〖iOS〗weak底层实现\"",
+   "msg": "starts at x 170; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#writing h3 \"〖iOS〗weak底层实现\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#writing p \"从 objc_initWeak、storeWeak、SideTa\"",
+   "msg": "starts at x 170; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#writing p \"从 objc_initWeak、storeWeak、SideTa\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#writing h3 \"【iOS】启动优化\"",
+   "msg": "starts at x 170; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#writing h3 \"【iOS】启动优化\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#writing p \"从虚拟内存、Mach-O、pre-main 到 main 阶段，\"",
+   "msg": "starts at x 170; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#writing p \"从虚拟内存、Mach-O、pre-main 到 main 阶段，\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section div.code-visual \"weak.m// A weak reference, kept \"",
+   "msg": "starts at x 701.1; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section div.code-visual \"weak.m// A weak reference, kept \""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section h3 \"Launch performance\"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section h3 \"Launch performance\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section p \"How an app gets from a tap on th\"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section p \"How an app gets from a tap on th\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section h3 \"Runtime details\"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section h3 \"Runtime details\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section p \"Objective-C internals explained \"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section p \"Objective-C internals explained \""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section h3 \"Working notes\"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section h3 \"Working notes\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "section.section.topics-section p \"Small engineering decisions that\"",
+   "msg": "starts at x 148; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "section.section.topics-section p \"Small engineering decisions that\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#memories p.section-aside \"Ten photographs collected away f\"",
+   "msg": "starts at x 994.4; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#memories p.section-aside \"Ten photographs collected away f\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#assistant div.chat-shell \"AI泡泡王助手 在线你好！我是 popxiaoli 的 AI 助\"",
+   "msg": "starts at x 669.3; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#assistant div.chat-shell \"AI泡泡王助手 在线你好！我是 popxiaoli 的 AI 助\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#assistant p.chat-title \"泡泡王助手\"",
+   "msg": "starts at x 746.3; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#assistant p.chat-title \"泡泡王助手\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#assistant p.chat-status \"在线\"",
+   "msg": "starts at x 746.3; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#assistant p.chat-status \"在线\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#assistant p.chat-hint \"Enter 发送 · Shift + Enter 换行\"",
+   "msg": "starts at x 670.3; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#assistant p.chat-hint \"Enter 发送 · Shift + Enter 换行\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#site-footer div.footer-directory \"Pages首页文章关于TopicsiOSObjective-CR\"",
+   "msg": "starts at x 923.6; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#site-footer div.footer-directory \"Pages首页文章关于TopicsiOSObjective-CR\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#site-footer span \"© 2026\"",
+   "msg": "starts at x 1315.1; the lines are 80 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#site-footer span \"© 2026\""
+   ]
+  },
+  {
+   "check": "neighbour",
+   "where": "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\"",
+   "msg": "framed, 21px of section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\" shows",
+   "fix": "keep the next section's heading and picture out of this screen",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "neighbour"
+   ],
+   "wheres": [
+    "#writing section.section.writing-section \"EssaysRecent writingTwo essays o\""
+   ]
+  },
+  {
+   "check": "screen-height",
+   "where": "section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\"",
+   "msg": "923px, 1.03 screens; a section is exactly one or two (--h)",
+   "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-height"
+   ],
+   "wheres": [
+    "section.section.topics-section section.section.topics-section \"The notebookCode, runtime and th\""
+   ]
+  },
+  {
+   "check": "screen-short",
+   "where": "#assistant section.section.assistant-section \"Ask the notebookQuestions about \"",
+   "msg": "800px tall; one screen under the nav is 900px",
+   "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-short",
+    "screen-height"
+   ],
+   "wheres": [
+    "#assistant section.section.assistant-section \"Ask the notebookQuestions about \""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 22,
+ "at": "2026-11-09T06:36:19.365Z"
+}
